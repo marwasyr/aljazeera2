@@ -41,6 +41,58 @@
         <a class="nav-link active" aria-current="page" href="#"  >سياسة</a>
 
         <img src="download.png" alt="logo" id="logo"/>
+
+
+
+
+        <nav class="navbar navbar-light bg-light fixed-top " id="hidden">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="download.png" style="width:30%;"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="download.png" style="width:30%;"></h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit" style="background-color: #3498db; color: white;">ابحث</button>
+                  </form>
+
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 " >
+                    <li class="nav-item">
+                      <a class="nav-link "  href="#" style="padding: 0; margin: 5; text-align: right;">سياسة</a></li>
+
+                    <li class="nav-item " ></li>
+                      <a class="nav-link" href="#" style="padding: 0; margin: 5; text-align: right;">اقتصاد</a></li>
+                    
+                      <li class="nav-item"></li>
+                      <a class="nav-link" href="#"style="padding: 0; margin: 5; text-align: right;">ثقافة</a></li>
+                      <li class="nav-item"></li>
+                      <a class="nav-link" href="#"style="padding: 0; margin: 5; text-align: right;">رياضة</a></li>
+                      <li class="nav-item"></li>
+                      <a class="nav-link" href="#"style="padding: 0; margin: 5; text-align: right;">فن</a></li>
+
+                      <li class="nav-item"></li>
+                      <a class="nav-link" href="#"style="padding: 0; margin: 5; text-align: right;">تكنولوجيا</a></li>
+                      <li class="nav-item"></li>
+                      <a class="nav-link" href="#"style="padding: 0; margin: 5; text-align: right;">تراث</a></li>
+                  
+                      <li class="nav-item"></li>
+                      <a class="nav-link" href="#"style="padding: 0; margin: 5; text-align: right;">ميدان</a></li>
+                      <li class="nav-item"></li>
+                      <a class="nav-link" href="#"style="padding: 0; margin: 5; text-align: right;">ريادة</a></li>
+                      <li class="nav-item"></li>
+                      <a class="nav-link" href="#"style="padding: 0; margin: 5; text-align: right;">البرامج</a></li>
+                      <li class="nav-item"></li>
+                      <a class="nav-link" href="#"style="padding: 0; margin: 5; text-align: right;">المزيد</a></li>
+                </div>
+              </div>
+            </div>
+          </nav>
      
         <style>
 
@@ -138,6 +190,18 @@ width: 100%;
     margin-left: 10px;
 }
 
+#hidden{
+    visibility: hidden;
+}
+
+
+
+
+
+
+
+
+
 @media  screen and (min-width:401px) and (max-width: 768px){
 .nav{
     height: 10%;
@@ -163,8 +227,17 @@ width: 100%;
     width: 10%;
   
 }
+.nav{
+    visibility: hidden;
+}
+#hidden{
+    visibility: visible;
+}
+
 
 }
+
+
 
 @media screen and (max-width:400px) {
     header{
@@ -177,7 +250,7 @@ float: right;
 }
 .card{
     width: 100%;
-   
+    
 }
 
 .card-body{
@@ -192,11 +265,14 @@ float: right;
     margin: 0;
 
 }
-
-
+.nav{
+    visibility: hidden;
+}
+#hidden{
+    visibility: visible;
 }
 
-
+}
 
 </style>
 
@@ -208,6 +284,8 @@ float: right;
 
 <main>
     
+
+
     <div class="card mb-3" style="max-width:100%; ">
         <div class="row g-0">
           
@@ -231,7 +309,7 @@ float: right;
          </div>
       </div>
 
-     
+
 
     </main>
 
